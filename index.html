@@ -1,47 +1,100 @@
-<!doctype html>
-<html lang="es">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lorem ipsum</title>
-
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <main>
-    <div class="text-center container">
-      <div class="row py-lg-3">
-        <div class="col-lg-6 col-md-8 mx-auto">
-          <h1 class="fw-light">Lorem  ipsum</h1>
-          <input type="search" class="form-control" name="buscar" id="inputBuscar" placeholder="Ej.: JUPITER">
-          <button class="btn btn-primary my-2" id="btnBuscar">Buscar imágenes</button>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">LOREM IPSUM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Search Bar (appear above the menu in mobile view) -->
+                <form class="d-flex my-3 my-lg-0 w-100 order-lg-1">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <!-- Menu Items -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dolor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Amet</a>
+                    </li>
+                    <li class="nav-item dropdown d-lg-none">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Opciones
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                            <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                            <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                            <li><a class="dropdown-item" href="#">Opción 4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
+    </nav>
+
+    <!-- Carousel de texto -->
+    <div class="container text-center mt-4">
+        <h1>Lorem ipsum...</h1>
+        <div id="carouselText" class="carousel-text">
+            <p id="text-slide">...vestibulum mollis, tortor ac congue commodo</p>
+        </div>
     </div>
 
-    <div class="container">
-      <div id="contenedor">
-      </div>
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Sidebar (only visible on LG screens) -->
+            <div class="col-lg-3 mb-4 d-none d-lg-block">
+                <ul class="list-group">
+                    <li class="list-group-item">Opción 1</li>
+                    <li class="list-group-item">Opción 2</li>
+                    <li class="list-group-item">Opción 3</li>
+                    <li class="list-group-item">Opción 4</li>
+                </ul>
+            </div>
+            <!-- Content -->
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis, tortor ac congue commodo, nisi neque bibendum elit, quis vulputate dolor augue ut mauris.</p>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <p>Phasellus eleifend semper tempor. Quisque mi lorem, laoreet eu urna sit amet, tempor volutpat est.</p>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <p>Fusce vitae enim et tellus lacinia condimentum eu at massa. Nullam laoreet, elit quis hendrerit maximus, ante sem congue lorem, at vestibulum felis mauris et arcu.</p>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <p>Mauris mattis porttitor erat, in pharetra risus fringilla lobortis. Vestibulum et ante commodo, imperdiet neque ac, tempus felis.</p>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <p>In mi velit, fringilla sed velit vel, ornare varius dui. Nunc viverra diam sit amet mollis posuere.</p>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <p>Proin suscipit orci mi, ut hendrerit mi molestie nec. Donec efficitur risus erat, eu auctor massa molestie vitae.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </main>
 
-  <footer class="text-muted py-5">
-    <div class="container">
-      <p class="float-end mb-1">
-        <a href="#">Volver arriba</a>
-      </p>
-      <p class="mb-1">Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">
-          Jovenes a Programar</a>, y consume datos de <a href="https://api.nasa.gov/" target="_blank">
-          api.nasa.gov</a></p>
-      <p class="mb-1">Generado con fines estrictamente educativos.</p>
-    </div>
-  </footer>
-
-  <script src="js/space.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
+
